@@ -390,20 +390,23 @@
       background: rgba(56,189,248,0.1);
     }
 
-    .coming-soon {
-      opacity: 0.45;
-      pointer-events: none;
+    .project-card.featured {
+      border-color: rgba(56,189,248,0.4);
+      background: linear-gradient(135deg, #111827 60%, rgba(56,189,248,0.05));
+      grid-column: 1 / -1;
     }
 
-    .coming-soon-badge {
+    .featured-badge {
+      display: inline-block;
       font-size: 0.7rem;
-      padding: 2px 8px;
-      background: rgba(129,140,248,0.12);
-      border: 1px solid rgba(129,140,248,0.25);
-      color: var(--accent2);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(56,189,248,0.4);
+      padding: 3px 10px;
       border-radius: 100px;
-      margin-left: 8px;
-      vertical-align: middle;
+      margin-bottom: 12px;
     }
 
     /* =====================
@@ -777,6 +780,26 @@
 
     <div class="projects-grid">
 
+      <div class="project-card featured">
+        <div class="featured-badge">Featured</div>
+        <h3>HRMS — Human Resource Management System</h3>
+        <p>
+          A production-ready full-stack application with JWT authentication and role-based
+          access control across three roles (Admin, Manager, Employee). Built with a secured
+          REST API on Spring Boot, applying the Strategy Pattern for payroll calculation so
+          new logic can be added without touching existing code. React frontend with
+          role-specific dashboards deployed on Vercel, backend on Render.
+        </p>
+        <div class="project-tech">
+          <span>Spring Boot</span><span>Spring Security</span><span>JWT</span>
+          <span>PostgreSQL</span><span>JPA/Hibernate</span><span>React</span>
+        </div>
+        <div class="project-links">
+          <a href="https://hrms-main-self.vercel.app/login" target="_blank">Live Demo</a>
+          <a href="https://github.com/King-Keith1/hrms-main" target="_blank">Source Code</a>
+        </div>
+      </div>
+
       <div class="project-card">
         <h3>Spirit Animal Quiz</h3>
         <p>
@@ -803,17 +826,6 @@
         </div>
         <div class="project-links">
           <a href="https://github.com/King-Keith1/alien-invasion" target="_blank">Source Code</a>
-        </div>
-      </div>
-
-      <div class="project-card coming-soon">
-        <h3>Full-Stack Project <span class="coming-soon-badge">Coming Soon</span></h3>
-        <p>
-          A full-stack web application using React, Node.js and MongoDB. In progress —
-          check back soon.
-        </p>
-        <div class="project-tech">
-          <span>React</span><span>Node.js</span><span>MongoDB</span>
         </div>
       </div>
 
