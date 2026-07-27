@@ -335,8 +335,13 @@
 
     .project-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(56,189,248,0.35);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+      border-color: rgba(56,189,248,0.45);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(56,189,248,0.08) inset;
+    }
+
+    .project-card.purple-accent:hover {
+      border-color: rgba(129,140,248,0.45);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(129,140,248,0.08) inset;
     }
 
     .project-card h3 {
@@ -801,22 +806,24 @@
           <span>PostgreSQL</span><span>JPA/Hibernate</span><span>React</span>
         </div>
         <div class="project-links">
-          <a href="https://hrms-main-self.vercel.app/login" target="_blank">Live Demo</a>
           <a href="https://github.com/King-Keith1/hrms-main" target="_blank">Source Code</a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Spirit Animal Quiz</h3>
+        <h3>Spirit Animal MBTI Quiz</h3>
         <p>
-          A browser-based quiz that maps user answers to a result using conditional logic.
-          Built as a clean, interactive single-page experience with no frameworks.
+          A personality quiz that matches you to one of 100+ animals, then layers your
+          MBTI type on top — so your type narrows the animal pool first, and your answers
+          pick the specific one. Multiple rounds of UI polish (spacing, animations, progress
+          bar, back button) and a bug fix that made results non-deterministic even with
+          identical answers.
         </p>
         <div class="project-tech">
           <span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
         <div class="project-links">
-          <a href="https://earnest-daifuku-1c619f.netlify.app/work/animal/spirit%20animal" target="_blank">Live Demo</a>
+          <a href="https://spiritanimalmbtii.netlify.app/" target="_blank">Live Demo</a>
           <a href="https://github.com/King-Keith1/spirit_animals" target="_blank">Source Code</a>
         </div>
       </div>
@@ -854,6 +861,23 @@
         <div class="project-links">
           <a href="https://wayfarer-fawn.vercel.app/" target="_blank">Live Demo</a>
           <a href="https://github.com/King-Keith1/time-currency-app" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card purple-accent">
+        <h3>Mantle — Asset Valuation App</h3>
+        <p>
+          "Letterboxd for your possessions" — catalogue anything you own and get a live
+          market valuation. Pulls real eBay sold-listing data for USD/GBP markets via the
+          eBay Browse API, with Tavily search as a free-tier fallback for regional pricing
+          (e.g. ZAR). Built as both a portfolio piece and a potential startup.
+        </p>
+        <div class="project-tech">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>eBay Browse API</span><span>Tavily API</span><span>Vercel</span>
+        </div>
+        <div class="project-links">
+          <a href="https://mantle-drab.vercel.app/" target="_blank">Live Demo</a>
+          <a href="https://github.com/King-Keith1/Mantle" target="_blank">Source Code</a>
         </div>
       </div>
 
@@ -1063,7 +1087,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Pierre Kahunda. All rights reserved.</p>
+    <p>&copy; 2026 Pierre Kahunda. All rights reserved.</p>
   </footer>
 
   <script>
